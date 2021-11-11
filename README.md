@@ -20,4 +20,8 @@ på vald planet visa fakta och bild
 
 vid en specifik planet ska det hända något 
 
+<<<<<<< HEAD
 vid planeter långt bort ska det komma upp att bränslet är snart slut och man måste vända- börja om?
+=======
+vid planeter långt bort ska det komma upp att bränslet är snart slut och man måste vända- börja om?
+>>>>>>> bb11d7c25c9287849c43591d534109fd4454694f
