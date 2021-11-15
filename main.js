@@ -1,0 +1,1 @@
+const username = prompt("Vad heter du?");
