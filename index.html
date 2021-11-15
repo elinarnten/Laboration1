@@ -9,10 +9,38 @@
     <script defer src="/main.js"></script>
 </head>
 <body>
-    <div class="greetings">
-        <h1>Välkomna till rymdens hop-on hop-off tour!</h1>
-        <p>Mitt namn är Rabbel och jag kommer att vara din guide.</p>
-        <p>Vi kan kan börja med att låta dig presentera dig.</p>
-    </div>
+
+    <main>
+        <div id="start-background">
+            <img src="/IMG/JLS102_SPACE-SPACEX-HEAVY_0205_11.jpg">
+        </div>
+        
+        <div id="greetings">
+            
+            <h1>Välkomna till rymdens hop-on hop-off tour!</h1>
+            
+            <div id="introduce" class="whiteBox">
+                <p>Mitt namn är Rabbel och jag kommer att vara din guide.</p>
+                <p>Vi kan kan börja med att låta dig presentera dig.</p>
+                
+                <p>Skriv in ditt namn</p> <br>
+                <input type="text" id="userName">
+                <button onclick="nameResult()">Skicka</button>
+                
+            </div>
+           <div id="fearHeights" class="whiteBox">
+                <p id="demo"></p>
+                <p>Jag har en yttligare fråga till dig, <br>och det är viktigt att du svarar ärligt..</p>
+                <p>Är du höjdrädd?</p>
+                
+                <button id="yes" onclick="fearQuestion()">Ja</button>
+                <button id="no" onclick="fearQuestion()">Nej</button>
+           </div>
+
+            
+        </div>
+
+    </main>
+    
 </body>
 </html>
