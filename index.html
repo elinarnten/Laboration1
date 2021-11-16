@@ -12,7 +12,7 @@
 
     <main>
         <div id="start-background">
-            <img src="IMG/JLS102_SPACE-SPACEX-HEAVY_0205_11.jpg">
+            <img src="IMG/rocket-launch.jpg">
         </div>
         
         
@@ -21,15 +21,18 @@
             <h1>Välkomna till rymdens hop-on hop-off tour!</h1>
             
             <div id="introduce" class="whiteBox">
+                
                 <p>Mitt namn är Rabbel och jag kommer att vara din guide. <br>
-                Vi kan kan börja med att låta dig presentera dig.<br>
+                Vi kan kan börja med att låta dig presentera dig.<br><br>
                 
                 Vad heter du?</p> <br>
                 <input type="text" id="userName">
                 <button id="submit-name" onclick="getNameResult()">Spara</button>
                 
             </div>
+
            
+
             <div id="fearHeights" class="whiteBox">
                 <p id="demo"></p>
                 <p>Jag har en yttligare fråga till dig, <br>
@@ -43,17 +46,30 @@
         </div>
 
         <div id="noEnter" class="whiteBox textPosition">
-            <h3 style="color: red;">Acess Denied</h3>
+            <h3 style="color: red;">Access Denied</h3>
             <p>Tyvärr, eftersom detta är extrema höjder rekommenderar vi ej detta åktur</p>
+            <button id="go-Back" onclick="main()">OK</button>
         </div>
 
-        <div id="enterAcess" class="whiteBox textPosition">
+        <div id="enterAccess" class="whiteBox textPosition">
             <p>Spänn bälterna, <br>
                 För nu åker vi!
             </p>
-            <button id="startEngine" onclick="">Starta motorerna</button>
+            <button id="startEngine" onclick="selectPlanet()">Starta motorerna</button>
         </div>
-
+        
+        <div id="inSpace">
+            <img src="IMG/nasa-earth.jpg">
+            <div class="whiteBox textPosition">
+                <p>Vilken planet vill du besöka?</p>
+                
+                <button id="moon" onclick="moon()">Månen</button>
+                <button id="mars" onclick="mars()">Mars</button>
+                <button id="pluto" onclick="pluto()">Pluto</button>
+                
+                
+            </div>
+        </div>
     </main>
     
 </body>

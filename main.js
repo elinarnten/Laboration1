@@ -1,7 +1,7 @@
 
+
 window.onload = main;
-let countdown;
-let seconds = 10;
+
 
 function main() {  
     hide();
@@ -11,7 +11,9 @@ function main() {
 function hide() {
    document.getElementById("fearHeights").style.display = 'none';
    document.getElementById("noEnter").style.display = 'none';
-   document.getElementById("enterAcess").style.display = 'none';
+   document.getElementById("enterAccess").style.display = 'none';
+   document.getElementById("inSpace").style.display = 'none';
+   document.getElementById('enterAccess').style.display = 'none';
 
 }
 
@@ -28,25 +30,33 @@ function getNameResult(){
 }
 
 function fearOfHeightsAnswerYes() {
-    //const yes = document.getElementById("yes");
     document.getElementById("greetings").style.display = 'none'; 
     document.getElementById("noEnter").style.display = null;
-    
+    const goBack = document.getElementById("go-Back")
+    goBack.onclick = main;
 
 }
 function fearOfHeightsAnswerNo() {
     document.getElementById("greetings").style.display = 'none'; 
-    document.getElementById("enterAcess").style.display = null;
-
+    document.getElementById("enterAccess").style.display = null;
   
 }
+function selectPlanet() {
+    document.getElementById('inSpace').style.display = null;
+    document.getElementById('start-background').style.display = 'none';
+    document.getElementById('enterAccess').style.display = 'none';
+    
+    
+}
 
-/*function setCountDown() {
-    if (!countdown) {
-        countdown = setInterval(handleTick, seconds);
-    }
-    else (seconds === 0) {
-        document.getElementById("greetings").style.display = null;
+/*function rocketCountDown() {
+    for (var i = 10; i < 10; i--) {
+        if (i > 0) {
+            console.log(i);
+        }
+        else if (i < 0 ) {
+            console.log("STOP");
+        }
     }
 }*/
 //hur startar man allt? 

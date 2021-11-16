@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 /*p {
     overflow: hidden;
@@ -30,20 +31,30 @@ button {
     border: none;
     border-radius: 10px;
 }
-#enterAcess {
+#enterAccess {
     font-size: 40px;
     font-weight: bolder;
 }
-.guide {
-    background-image: url(IMG/Rabbel-removebg-preview.png); background-repeat: no-repeat; background-size: 10rem;
+#guide {
+    display: flex;
+    position: absolute;
+    height: 6rem;
+}
+#userName {
+    border-radius: 10px;
+    border: none;
+    height: 1.5rem;
+    background-color:lightgray;
 }
 
-
+#inSpace img {
+    width: 100%;
+    height: auto;
+}
+#planets-button {
+    display: flex;
+}
 /* Reusable classes */
 .whiteBox { margin: 2rem; padding: 1rem; text-align: center; background-color: white; border-radius: 10px; 
     /*background-image: url(/IMG/Rabbel-removebg-preview.png); background-repeat: no-repeat; background-size: 10rem;*/ }
 .textPosition { position: absolute; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-
-/*<div id="guide">
-            <img src="/IMG/Rabbel-removebg-preview.png">
-        </div>*/
