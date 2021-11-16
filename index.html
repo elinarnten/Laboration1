@@ -15,29 +15,43 @@
             <img src="/IMG/JLS102_SPACE-SPACEX-HEAVY_0205_11.jpg">
         </div>
         
-        <div id="greetings">
+        
+        <div id="greetings" class="textPosition">
             
             <h1>Välkomna till rymdens hop-on hop-off tour!</h1>
             
             <div id="introduce" class="whiteBox">
-                <p>Mitt namn är Rabbel och jag kommer att vara din guide.</p>
-                <p>Vi kan kan börja med att låta dig presentera dig.</p>
+                <p>Mitt namn är Rabbel och jag kommer att vara din guide. <br>
+                Vi kan kan börja med att låta dig presentera dig.<br>
                 
-                <p>Skriv in ditt namn</p> <br>
+                Vad heter du?</p> <br>
                 <input type="text" id="userName">
-                <button onclick="nameResult()">Skicka</button>
+                <button id="submit-name" onclick="getNameResult()">Spara</button>
                 
             </div>
-           <div id="fearHeights" class="whiteBox">
+           
+            <div id="fearHeights" class="whiteBox">
                 <p id="demo"></p>
-                <p>Jag har en yttligare fråga till dig, <br>och det är viktigt att du svarar ärligt..</p>
-                <p>Är du höjdrädd?</p>
+                <p>Jag har en yttligare fråga till dig, <br>
+                    och det är viktigt att du svarar ärligt.. <br> <br>
+                    Är du höjdrädd?</p> <br>
                 
-                <button id="yes" onclick="fearQuestion()">Ja</button>
-                <button id="no" onclick="fearQuestion()">Nej</button>
+                <button id="yes" onclick="fearOfHeightsAnswerYes()">Ja</button>
+                <button id="no" onclick="fearOfHeightsAnswerNo()">Nej</button>
            </div>
+   
+        </div>
 
-            
+        <div id="noEnter" class="whiteBox textPosition">
+            <h3 style="color: red;">Acess Denied</h3>
+            <p>Tyvärr, eftersom detta är extrema höjder rekommenderar vi ej detta åktur</p>
+        </div>
+
+        <div id="enterAcess" class="whiteBox textPosition">
+            <p>Spänn bälterna, <br>
+                För nu åker vi!
+            </p>
+            <button id="startEngine" onclick="">Starta motorerna</button>
         </div>
 
     </main>
