@@ -16,7 +16,7 @@
     to {width: 100%;}
     
 }*/
-#start-background {
+.backgroundSettings {
     width: 100%;
     height: auto;
     overflow-y: hidden;
@@ -47,14 +47,8 @@ button {
     background-color:lightgray;
 }
 
-#inSpace img {
-    width: 100%;
-    height: auto;
-}
-#planets-button {
-    display: flex;
-}
+
 /* Reusable classes */
-.whiteBox { margin: 2rem; padding: 1rem; text-align: center; background-color: white; border-radius: 10px; 
+.whiteBox {padding: 1rem; text-align: center; background-color: white; border-radius: 10px; 
     /*background-image: url(/IMG/Rabbel-removebg-preview.png); background-repeat: no-repeat; background-size: 10rem;*/ }
 .textPosition { position: absolute; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); }

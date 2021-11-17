@@ -11,14 +11,14 @@
 <body>
 
     <main>
-        <div id="start-background">
-            <img src="IMG/rocket-launch.jpg">
+        <div id="start-background" >
+            <img src="IMG/rocket-launch.jpg" class="backgroundSettings">
         </div>
         
         
         <div id="greetings" class="textPosition">
             
-            <h1>Välkomna till rymdens hop-on hop-off tour!</h1>
+            <h1>Välkomna till rymdens hop-on hop-off tour!</h1> <br>
             
             <div id="introduce" class="whiteBox">
                 
@@ -34,8 +34,8 @@
            
 
             <div id="fearHeights" class="whiteBox">
-                <p id="demo"></p>
-                <p>Jag har en yttligare fråga till dig, <br>
+                <p id="demo"></p> <br>
+                <p>Jag har en ytterligare fråga till dig, <br> 
                     och det är viktigt att du svarar ärligt.. <br> <br>
                     Är du höjdrädd?</p> <br>
                 
@@ -47,27 +47,48 @@
 
         <div id="noEnter" class="whiteBox textPosition">
             <h3 style="color: red;">Access Denied</h3>
-            <p>Tyvärr, eftersom detta är extrema höjder rekommenderar vi ej detta åktur</p>
+            <p>Tyvärr, eftersom det är extrema höjder vi talar om rekommenderar vi ej denna åktur</p>
             <button id="go-Back" onclick="main()">OK</button>
         </div>
 
         <div id="enterAccess" class="whiteBox textPosition">
-            <p>Spänn bälterna, <br>
+            <p>Spänn fast bältena, <br>
                 För nu åker vi!
             </p>
             <button id="startEngine" onclick="selectPlanet()">Starta motorerna</button>
         </div>
         
-        <div id="inSpace">
-            <img src="IMG/nasa-earth.jpg">
-            <div class="whiteBox textPosition">
+        <div id="inSpace" >
+            <div id="space-background" >
+                <img src="IMG/nasa-earth.jpg" class="backgroundSettings">
+            </div>
+            <div id="moon-background">
+                <img src="IMG/planet-moon.jpg" class="backgroundSettings">
+            </div>
+            <div id="mars-background">
+                <img src="IMG/planet-mars.jpg" class="backgroundSettings">
+            </div>
+            
+            <div id="select-planet" class="whiteBox textPosition">
                 <p>Vilken planet vill du besöka?</p>
+                <br> <br>
                 
-                <button id="moon" onclick="moon()">Månen</button>
-                <button id="mars" onclick="mars()">Mars</button>
-                <button id="pluto" onclick="pluto()">Pluto</button>
+                <button id="moon" onclick="getMoon()">Månen</button>
+                <button id="mars" onclick="getMars()">Mars</button>
+                <button id="pluto" onclick="getPluto()">Pluto</button>
                 
                 
+            </div>
+            <div id="planet-mars">
+                <button id="next" onclick="selectPlanet()">Nästa</button>
+
+            </div>
+            <div id="planet-moon"class="whiteBox textPosition">
+               
+                <button id="next" onclick="selectPlanet()">Nästa</button>
+            </div>
+            <div id="planet-pluto">
+
             </div>
         </div>
     </main>
