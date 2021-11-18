@@ -21,3 +21,9 @@ på vald planet visa fakta och bild
 vid en specifik planet ska det hända något 
 
 vid planeter långt bort ska det komma upp att bränslet är snart slut och man måste vända- börja om?
+
+fixa responsiviteten
+fixa main så att man komma till startsidan
+lägg till js docs
+fixa bakgrunden
+Fixa readme.md
