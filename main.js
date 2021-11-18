@@ -13,9 +13,7 @@ function hide() {
    document.getElementById("noEnter").style.display = 'none';
    document.getElementById("enterAccess").style.display = 'none';
    document.getElementById("inSpace").style.display = 'none';
-   document.getElementById('planet-mars').style.display = 'none';
-   document.getElementById('planet-moon').style.display = 'none';
-   document.getElementById('planet-pluto').style.display = 'none';
+   
 
 }
 
@@ -34,8 +32,7 @@ function getNameResult(){
 function fearOfHeightsAnswerYes() {
     document.getElementById("greetings").style.display = 'none'; 
     document.getElementById("noEnter").style.display = null;
-    const goBack = document.getElementById("go-Back")
-    goBack.onclick = main;
+    
 
 }
 function fearOfHeightsAnswerNo() {
@@ -45,9 +42,17 @@ function fearOfHeightsAnswerNo() {
 }
 function selectPlanet() {
     document.getElementById('inSpace').style.display = null;
+    document.getElementById('space-background').style.display = null;
+    document.getElementById('select-planet').style.display = null;
     document.getElementById('start-background').style.display = 'none';
     document.getElementById('enterAccess').style.display = 'none';
     document.getElementById('moon-background').style.display = 'none';
+    document.getElementById('planet-moon').style.display = 'none';
+    document.getElementById('mars-background').style.display = 'none';
+    document.getElementById('planet-mars').style.display = 'none';
+    document.getElementById('planet-mars-robot').style.display = 'none';
+    document.getElementById('mars-robot-background').style.display = 'none';
+    document.getElementById('planet-pluto').style.display = 'none';
     
 }
 
@@ -57,9 +62,23 @@ function getMars() {
     document.getElementById('space-background').style.display = 'none';
     document.getElementById('select-planet').style.display = 'none';
 }
+function getMarsRobot() {
+    document.getElementById('planet-mars-robot').style.display = null;
+    document.getElementById('mars-robot-background').style.display = null;
+    document.getElementById('mars-background').style.display = 'none';
+    document.getElementById('planet-mars').style.display = 'none';
+    const textInput = document.getElementById('submit-input')
+    textInput.onclick = getRobotAnswer;
+
+}
+function getRobotAnswer() {
+    const result = document.getElementById('text-input').value;
+    console.log(result);
+}
 
 function getPluto() {
     document.getElementById('planet-pluto').style.display = null;
+    document.getElementById('mars-robot-background').style.display = 'none';
     document.getElementById('space-background').style.display = 'none';
     document.getElementById('select-planet').style.display = 'none';
 }
@@ -70,9 +89,7 @@ function getMoon() {
     document.getElementById('space-background').style.display = 'none';
     document.getElementById('select-planet').style.display = 'none';
     document.getElementById('next').style.display = null;
-    const goBack = document.getElementById("next")
-    goBack.onclick = selectPlanet;
-}
+}  
 
 /*function rocketCountDown() {
     for (var i = 10; i < 10; i--) {

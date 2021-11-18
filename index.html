@@ -5,90 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TourGuide through space</title>
+    <link rel="icon" type="image/x-icon" href="IMG/Rabbel.png">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
 </head>
 <body>
 
-    <main>
-        <div id="start-background" >
-            <img src="IMG/rocket-launch.jpg" class="backgroundSettings">
-        </div>
+    <main >
         
+        <div id="main-content">
         
-        <div id="greetings" class="textPosition">
+            <div id="start-background" >
+                <img src="IMG/rocket-launch.jpg" class="backgroundSettings">
+            </div>  
+        
+            <div id="greetings" class="textPosition" >
             
-            <h1>Välkomna till rymdens hop-on hop-off tour!</h1> <br>
+           
+                <h1>Välkomna till rymdens hop-on hop-off tour!</h1> <br>
             
-            <div id="introduce" class="whiteBox">
+                <div id="introduce" class="whiteBox">
+                    
+                    <img src="IMG/Rabbel.png" class="rabbel">
+                    
+                   
+                    <p>Mitt namn är Rabbel och jag kommer att vara din guide.
+                    Vi kan kan börja med att låta dig presentera dig.<br>
                 
-                <p>Mitt namn är Rabbel och jag kommer att vara din guide. <br>
-                Vi kan kan börja med att låta dig presentera dig.<br><br>
+                    Vad heter du?</p> <br>
+                    <input type="text" id="userName">
+                    <button id="submit-name" onclick="getNameResult()">Spara</button>
                 
-                Vad heter du?</p> <br>
-                <input type="text" id="userName">
-                <button id="submit-name" onclick="getNameResult()">Spara</button>
-                
-            </div>
+                </div>
 
            
 
-            <div id="fearHeights" class="whiteBox">
-                <p id="demo"></p> <br>
-                <p>Jag har en ytterligare fråga till dig, <br> 
-                    och det är viktigt att du svarar ärligt.. <br> <br>
-                    Är du höjdrädd?</p> <br>
+                <div id="fearHeights" class="whiteBox">
+                   
+                    <img src="IMG/Rabbel.png" class="rabbel">
+                    
+                    
+                    <p id="demo"></p> <br>
+                    <p>Jag har en ytterligare fråga till dig, <br> 
+                        och det är viktigt att du svarar ärligt.. <br> <br>
+                        Är du höjdrädd?</p> <br>
                 
-                <button id="yes" onclick="fearOfHeightsAnswerYes()">Ja</button>
-                <button id="no" onclick="fearOfHeightsAnswerNo()">Nej</button>
-           </div>
+                    <button id="yes" class="" onclick="fearOfHeightsAnswerYes()">Ja</button>
+                    <button id="no" onclick="fearOfHeightsAnswerNo()">Nej</button>
+                    
+                </div>
    
-        </div>
+            </div>
 
-        <div id="noEnter" class="whiteBox textPosition">
-            <h3 style="color: red;">Access Denied</h3>
-            <p>Tyvärr, eftersom det är extrema höjder vi talar om rekommenderar vi ej denna åktur</p>
-            <button id="go-Back" onclick="main()">OK</button>
-        </div>
-
-        <div id="enterAccess" class="whiteBox textPosition">
-            <p>Spänn fast bältena, <br>
-                För nu åker vi!
-            </p>
-            <button id="startEngine" onclick="selectPlanet()">Starta motorerna</button>
-        </div>
-        
-        <div id="inSpace" >
-            <div id="space-background" >
-                <img src="IMG/nasa-earth.jpg" class="backgroundSettings">
-            </div>
-            <div id="moon-background">
-                <img src="IMG/planet-moon.jpg" class="backgroundSettings">
-            </div>
-            <div id="mars-background">
-                <img src="IMG/planet-mars.jpg" class="backgroundSettings">
-            </div>
-            
-            <div id="select-planet" class="whiteBox textPosition">
-                <p>Vilken planet vill du besöka?</p>
+            <div id="noEnter" class="whiteBox textPosition">
+                <img src="IMG/Rabbel.png" class="rabbel">
+                <h3 style="color: red;">Access Denied</h3>
+                <p>Tyvärr, eftersom det är extrema höjder vi talar om rekommenderar vi ej denna åktur</p>
                 <br> <br>
-                
-                <button id="moon" onclick="getMoon()">Månen</button>
-                <button id="mars" onclick="getMars()">Mars</button>
-                <button id="pluto" onclick="getPluto()">Pluto</button>
-                
-                
+                <button id="next" onclick="main()">Nästa</button>
             </div>
-            <div id="planet-mars">
-                <button id="next" onclick="selectPlanet()">Nästa</button>
 
+            <div id="enterAccess" class="whiteBox textPosition">
+                <img src="IMG/Rabbel.png" class="rabbel">
+                <p>Spänn fast bältena, <br>
+                    För nu åker vi!
+                </p>
+                <button id="startEngine" onclick="selectPlanet()">Starta motorerna</button>
             </div>
-            <div id="planet-moon"class="whiteBox textPosition">
+        
+            <div id="inSpace" >
+                <div id="space-background" >
+                    <img src="IMG/nasa-earth.jpg" class="backgroundSettings">
+                </div>
+                <div id="moon-background">
+                    <img src="IMG/planet-moon.jpg" class="backgroundSettings">
+                </div>
+                <div id="mars-background">
+                    <img src="IMG/planet-mars.jpg" class="backgroundSettings">
+                </div>
+                <div id="mars-robot-background">
+                    <img src="IMG/mars-robot.jpg" class="backgroundSettings">
+                </div>
+                
+                <button id="home" onclick="main()">Hem</button> 
+
+                <div id="select-planet" class="whiteBox textPosition">
+                    <img src="IMG/Rabbel.png" class="rabbel">
+                    <p>Sådär! Hoppas resan inte kändes alltför skakig.<br> Nåväl. <br>
+                        Vilken planet vill du besöka?</p>
+                    <br> <br>
+                
+                    <button id="moon" onclick="getMoon()">Månen</button>
+                    <button id="mars" onclick="getMars()">Mars</button>
+                    <button id="pluto" onclick="getPluto()">Pluto</button> 
+                    
+                    
+                </div>
+            
+                
+                <div id="planet-mars" class="whiteBox textPosition">
+                    <img src="IMG/Rabbel.png" class="rabbel">
+                    <h2>Mars</h2> <br> 
+                    <p>Planeten Mars är den fjärde planeten från solen. <br>
+                        Forskare har på senare år kunna visa att <br>Mars har eh.. ett eh..<br>
+                        Vänta lite.. Är det verkligen den?</p> <br>
+                    <button id="next" onclick="getMarsRobot()">Nästa</button>
+                </div>
+                
+                <div id="planet-mars-robot" class="whiteBox textPosition">
+                    <img src="IMG/Rabbel.png" class="rabbel">
+                    <p>Idag har du tur. Detta är nämligen Mars Rover! En robot som ska samla <br>
+                        in data som forskare på Nasa kan ta del av. <br>Det händer väldigt sällan att man får nöjet att träffa Mars robot.
+                        Det måste vara ensamt att vara här. <br>Säg något uppmuntrande så blir den säkert glad!
+                    </p>
+                        <input type="text" id="text-input">
+                        <button id="submit-input" onclick="getRobotAnswer()">Skicka</button>
+                </div>
+
+                <div id="planet-moon"class="whiteBox textPosition">
+                    <h2>Månen</h2> <br>
+                    <audio controls>
+                        <source src="Assets/Ted gärdestad  Jag vill ha en egen måne.mp3" type="audio/mpeg">
+                    </audio> <br>
+                    <button id="next" onclick="selectPlanet()">Nästa</button>
+                </div>
+                <div id="planet-pluto" class="whiteBox textPosition">
+                    <h2>Kommer snart</h2>
+                    <p>App app. Inte röra den knappen,<br> men håll ut nästa år lanserar vi en stor uppgradering. <br> 
+                        Återkom då!</p> <br>
+                    <button id="next" onclick="selectPlanet()">Tillbaka</button>
+                </div>
                
-                <button id="next" onclick="selectPlanet()">Nästa</button>
-            </div>
-            <div id="planet-pluto">
-
             </div>
         </div>
     </main>
