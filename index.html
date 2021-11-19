@@ -13,15 +13,14 @@
 <body>
 
     <main id="main-background" class="flex justify-content-center align-center">
-        
+        <div class="rabbel flex">
+            <img src="IMG/Rabbel.png " class="rabbel" >
+        </div>  
         <div id="main-content" class="flex align-center">          
               
-            <div id="rabbel" class="rabbel flex" >
-                <img src="IMG/Rabbel.png" >
-            </div>  
+        
             
-            
-            <div id="greetings-text" class="whiteBox flex flex-column text-align-center justify-content-center " >
+            <div id="greetings-text" class="flex whiteBox flex-column text-align-center justify-content-center " >
                 <h1>Välkomna till en 'tour among the stars'!</h1> <br>
                 <div id="introduce" >
                   <p>Mitt namn är Rabbel och jag kommer att vara din guide.
@@ -56,7 +55,7 @@
                 <h3 style="color: red;">Access Denied</h3>
                 <p>Tyvärr, eftersom det är extrema höjder vi talar om rekommenderar vi ej denna åktur</p>
                 <br> <br>
-                <button id="next" onclick="main()">Nästa</button>
+                <button id="next" onclick="getBye()">Avsluta</button>
             </div>
 
             <div id="enterAccess" class="whiteBox text-align-center">
@@ -69,7 +68,7 @@
         
             <div id="inSpace" class="flex flex-column text-align-center justify-content-center" >
                
-                <button id="home" onclick="main()">Hem</button> 
+                <button id="home" onclick="getBye()">Hem</button> 
 
                 <div id="select-planet" class="whiteBox">
                     
@@ -120,6 +119,10 @@
                     <p>App app. Inte röra den knappen,<br> men håll ut nästa år lanserar vi en stor uppgradering. <br> 
                         Återkom då!</p> <br>
                     <button id="next" onclick="selectPlanet()">Tillbaka</button>
+                </div>
+
+                <div id="Bye" class="whiteBox">
+                    <h2>Hejdå!</h2>  
                 </div>
                
             </div>

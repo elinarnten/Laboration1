@@ -3,9 +3,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
-body {
-    display: block;
-}
 #main-background {
     background-image: url(IMG/rocket-launch.jpg);
     background-size: cover;
@@ -44,7 +41,7 @@ button:hover {
     background-color:lightgray;
 }
 .rabbel {
-    height: 7rem;
+    height: 15rem;
 }
 
 #home {
@@ -70,15 +67,9 @@ button:hover {
 .position-absolute {position: absolute;}
 .display-block{display: inline-block;}
 .no-margin{margin: 0;}
-.float{float: left;}
 .align-center{align-items: center;}
-.block{display: block;}
 
-.textPosition { 
-    display: flex;
-    text-align: center; 
-    top: 50%; left: 50%; transform: translate(-50%, -50%);
-}    
+
 
 @media all and (max-width: 900px) {
     #main-content {justify-content: center; display: flex;}

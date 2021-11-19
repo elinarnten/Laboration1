@@ -50,7 +50,7 @@ function selectPlanet() {
     document.getElementById('planet-mars-robot').style.display = 'none';
     document.getElementById('robotRespond').style.display = 'none';
     document.getElementById('planet-pluto').style.display = 'none';
-    
+    document.getElementById('Bye').style.display = 'none';
 }
 
 function getMars() {
@@ -93,4 +93,14 @@ function getMoon() {
     document.getElementById('planet-moon').style.display = null;
     document.getElementById('select-planet').style.display = 'none';
     document.getElementById('next').style.display = null;
-}  
+} 
+function getBye() {
+    document.getElementById('Bye').style.display = null;
+    document.getElementById('select-planet').style.display = 'none';
+    document.getElementById('planet-moon').style.display = 'none';
+    document.getElementById('planet-mars').style.display = 'none';
+    document.getElementById('planet-mars-robot').style.display = 'none';
+    document.getElementById('robotRespond').style.display = 'none';
+    document.getElementById('planet-pluto').style.display = 'none';
+    
+}
