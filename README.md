@@ -1,26 +1,13 @@
 # Laboration1
-(vid varje information ska en avatar synas intill som ska stå för berättaren)
+README.md fil. Den ska innehålla en titel, beskrivning av uppgiften och en demo länk (GitHub Pages). Dessutom måste din projektmapp innehålla ”.git” mappen som länkar till ditt GitHub repo.
 
-introduktion
-be skriva in namn-textruta
-hälsa användaren
+**Uppgiften**
+Vi har fått i uppgift att skapa en textinteraktiv värld. Användaren ska kunna göra förändringar i världen. Såna förändringar kan vara att gå in i ett annat rum (scen), plocka upp föremål etc. Vi har fått fria händer och själva fått bestämma hur världen vi ska skapa ska se ut.
+ 
+I min värld så blir man mött av Rabbel (känd från 'Tillbaka till Vintergatan') som ska ta användaren på en resa till rymden. Väl i rymden får användaren välja vilken planet hen vill åka till. På de olika planeterna händer det olika saker. 
 
 
-Är du höjdrädd?
-Val
-Ja- åk
-Nej- tyvärr(starta om)
-
-film på när raket startar
-
-Välj vilken planet
-visa valmöjligheter på planeter
-
-på vald planet visa fakta och bild
-
-vid en specifik planet ska det hända något 
-
-vid planeter långt bort ska det komma upp att bränslet är snart slut och man måste vända- börja om?
+[Demo](https://elinarnten.github.io/Laboration1/)
 
 fixa responsiviteten
 fixa main så att man komma till startsidan
