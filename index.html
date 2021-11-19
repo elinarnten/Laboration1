@@ -12,13 +12,11 @@
 </head>
 <body>
 
-    <main id="main-background" class="flex justify-content-center align-center">
-        <div class="rabbel flex">
-            <img src="IMG/Rabbel.png " class="rabbel" >
+    <main id="main-background" id="container" class="flex justify-content-center align-center">
+        <div class="flex">
+            <img src="IMG/Rabbel.png " class="rabbel flex justify-content-center align-center" >
         </div>  
-        <div id="main-content" class="flex align-center">          
-              
-        
+        <div id="main-content" class="flex align-center justify-content-center">          
             
             <div id="greetings-text" class="flex whiteBox flex-column text-align-center justify-content-center " >
                 <h1>Välkomna till en 'tour among the stars'!</h1> <br>
@@ -43,8 +41,8 @@
                         och det är viktigt att du svarar ärligt.. <br> <br>
                         Är du höjdrädd?</p> <br>
                 
-                    <button id="yes" class="" onclick="fearOfHeightsAnswerYes()">Ja</button>
-                    <button id="no" onclick="fearOfHeightsAnswerNo()">Nej</button>
+                    <button id="yes" class="" onclick="getFearOfHeightsAnswerYes()">Ja</button>
+                    <button id="no" onclick="getFearOfHeightsAnswerNo()">Nej</button>
                     
                 </div>
    
@@ -54,8 +52,7 @@
                 
                 <h3 style="color: red;">Access Denied</h3>
                 <p>Tyvärr, eftersom det är extrema höjder vi talar om rekommenderar vi ej denna åktur</p>
-                <br> <br>
-                <button id="next" onclick="getBye()">Avsluta</button>
+                <br> 
             </div>
 
             <div id="enterAccess" class="whiteBox text-align-center">
@@ -102,7 +99,8 @@
                 </div>
 
                 <div id="robotRespond" class="whiteBox">
-                    <p>bzzzz bzzzzz</p> <br>
+                    <p id="human-respond"></p> <br>
+                    <p>Mars Rover: bzzzz bzzzzz</p> <br>
                     <button id="next" onclick="selectPlanet()">Nästa</button>
                 </div>
 

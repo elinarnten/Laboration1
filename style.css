@@ -71,12 +71,11 @@ button:hover {
 
 
 
-@media all and (max-width: 900px) {
-    #main-content {justify-content: center; display: flex;}
-    div { flex-direction: column;}
+@media all and (max-width: 900px) {     
+    #container {flex-wrap: wrap;}
   
 }
 @media all and (max-width: 4800px) {
-    #main-content {justify-content: center;}
-    div { flex-direction: column;}
+   #container {flex-wrap: wrap;}
+    
 }
