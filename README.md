@@ -7,4 +7,4 @@ Vi har fått i uppgift att skapa en värld med textbaserad interaktiv upplevelse
 I min värld så blir man mött av Rabbel (känd från 'Tillbaka till Vintergatan') som ska ta användaren på en resa till rymden. Väl i rymden får användaren välja vilken planet hen vill åka till. På de olika planeterna händer det olika saker. 
 
 
-[Demo](https://elinarnten.github.io/Laboration1/)
+[Demo](https://elinarnten.github.io/SpaceTour/)
